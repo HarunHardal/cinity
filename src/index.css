@@ -65,6 +65,8 @@ html {
 .button p {
   margin: 5px;
 }
-
+.swiper-button-next, .swiper-button-prev{
+  background-color: #b20000
+}
 @media screen and (max-width: 375px) {
 }
