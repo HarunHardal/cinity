@@ -1,0 +1,118 @@
+export const TvGenreList = [
+  {
+    title: "Action & Adventure",
+    description: "Action & Adventure",
+    alt: "Action & Adventure",
+    id: 10759,
+  },
+  {
+    title: "Animation",
+    description: "Animation",
+    alt: "Animation",
+    id: 16,
+  },
+  {
+    title: "Comedy",
+    description: "Comedy",
+    alt: "Comedy",
+    id: 35,
+  },
+  {
+    title: "Crime",
+    description: "Crime",
+    alt: "Crime",
+    id: 80,
+  },
+  {
+    title: "Documentary",
+    description: "Documentary",
+    alt: "Documentary",
+    id: 99,
+  },
+  {
+    title: "Drama",
+    description: "Drama",
+    alt: "Drama",
+    id: 18,
+  },
+  {
+    title: "Family",
+    description: "Family",
+    alt: "Family",
+    id: 10751,
+  },
+  {
+    title: "Kids",
+    description: "Kids",
+    alt: "Kids",
+    id: 10762,
+  },
+  {
+    title: "Mystery",
+    description: "Mystery",
+    alt: "Mystery",
+    id: 9648,
+  },
+  {
+    title: "News",
+    description: "News",
+    alt: "News",
+    id: 10763,
+  },
+  {
+    title: "Reality",
+    description: "Reality",
+    alt: "Reality",
+    id: 10764,
+  },
+  {
+    title: "Sci-Fi & Fantasy",
+    description: "Sci-Fi & Fantasy",
+    alt: "Sci-Fi & Fantasy",
+    id: 10765,
+  },
+  {
+    title: "Soap",
+    description: "Soap",
+    alt: "Soap",
+    id: 10766,
+  },
+  {
+    title: "Talk",
+    description: "Talk",
+    alt: "Talk",
+    id: 10767,
+  },
+  {
+    title: "War & Politics",
+    description: "War & Politics",
+    alt: "War & Politics",
+    id: 10768,
+  },
+  {
+    title: "Western",
+    description: "Western",
+    alt: "Western",
+    id: 37,
+  },
+  {
+    title: "Popular",
+    description: "popular",
+    alt: "popular",
+  },
+  {
+    title: "Airing Today",
+    description: "airing_today",
+    alt: "Airing Today",
+  },
+  {
+    title: "Top Rated",
+    description: "top_rated",
+    alt: "Top Rated",
+  },
+  {
+    title: "On The Air",
+    description: "on_the_air",
+    alt: "On The Air",
+  },
+];

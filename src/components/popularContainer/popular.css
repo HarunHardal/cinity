@@ -1,0 +1,157 @@
+.title {
+  color: #fff;
+  font-size: 3vw;
+  font-family: "Saira Semi Condensed", sans-serif;
+  padding: 0 50px;
+}
+.swiper {
+  position: relative;
+  height: 450px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+}
+.swiper-slide {
+  position:relative ;
+  left: 0;
+  display: flex;
+  min-width: 200px;
+  justify-content: center;
+}
+.content-name2 {
+  color: #fff;
+  font-size: 21px;
+  font-family: "Saira Semi Condensed", sans-serif;
+  position: relative;
+  top: 70%;
+  text-align: center;
+}
+.poster {
+  position: absolute;
+  width: 200px;
+  cursor: pointer;
+  left: 50%;
+  transform: translate(-50%);
+}
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 5% 0;
+}
+.line2 {
+  display: block;
+  position: absolute;
+  width: 80%;
+  right: -20%;
+  border-top: 1px solid #b20000;
+  overflow: hidden;
+}
+.brace{
+  margin: 10%;
+}
+
+@media (min-width: 1281px) {
+  .line2 {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .poster {
+    width: 180px;
+  }
+  .content-name2 {
+    font-size: 1.3rem;
+    top: 70%;
+  }
+  .line2 {
+    width: 60%;
+  }
+  .brace{
+    margin: 10%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .poster {
+    width: 160px;
+  }
+  .content-name2 {
+    font-size: 1.1rem;
+    top: 65%;
+  }
+  .title {
+    font-size: 1.9rem;
+  }
+  .line2 {
+    width: 65%;
+  }
+  .brace{
+    margin: 2%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .poster {
+    width: 160px;
+  }
+  .content-name2 {
+    font-size: 1.1rem;
+    top: 65%;
+  }
+  .title {
+    font-size: 1.9rem;
+  }
+  .line2 {
+    width: 65%;
+  }
+  .brace{
+    margin: 2%;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .swiper{
+    padding: 0 20px;
+    max-height: 300px;
+  }
+  .poster {
+    width: 130px;
+  }
+  .content-name2 {
+    font-size: .9rem;
+    top: 70%;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .line2 {
+    width: 70%;
+  }
+  .brace{
+    margin: 1%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .swiper{
+    padding: 0 20px;
+    max-height: 250px;
+  }
+  .poster {
+    width: 130px;
+  }
+  .content-name2 {
+    font-size: .9rem;
+    top: 80%;
+  }
+  .title {
+    font-size: 0.9rem;
+    padding: 0 50px;
+  }
+  .line2 {
+    width: 60%;
+  }
+  .brace{
+    margin: 0;
+  }
+}

@@ -1,0 +1,321 @@
+.nav-items {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+  pointer-events: none;
+}
+.logo {
+  cursor: pointer;
+  margin: 2rem;
+  width: 100px;
+  pointer-events: fill;
+}
+
+/* SEARCH */
+.search-box {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin: 2rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  transition: 1s linear;
+  overflow: hidden;
+  padding: 10px;
+  right: 4%;
+  margin-right: 3%;
+  pointer-events: fill;
+}
+.search-box.search-box-active {
+  width: 240px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.search-button {
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  position: relative;
+  margin-left: 10px;
+  right: 0;
+}
+.input-search {
+  position: relative;
+  border: none;
+  border-bottom: 1px solid transparent;
+  background-color: transparent;
+  color: #fff;
+  opacity: 0;
+  border-bottom: 1px solid #b20000;
+  transition: 1s linear;
+  padding: 10px 0;
+  font-size: 16px;
+}
+.input-search::placeholder {
+  color: rgb(206, 206, 206);
+}
+.input-search:focus {
+  outline: none;
+}
+.input-search.input-search-active {
+  opacity: 1;
+}
+.search-active {
+  display: block;
+}
+.search-content {
+  background-color: #000;
+  z-index: 89;
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: scroll;
+}
+.search-content-wrapper {
+  display: grid;
+  height: auto;
+  width: 100%;
+  grid-template-columns: repeat(3, 33%);
+  justify-content: center;
+  padding: 5% 0 10% 0;
+}
+.search-content::-webkit-scrollbar{
+  display: none;
+}
+.search-result-box {
+  position: relative;
+  height: auto;
+  width: auto;
+  margin: 20px 20px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  overflow: hidden;
+}
+.search-result-poster {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+.search-result-title {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 0 0 5px #000;
+  z-index: 2;
+}
+.search-result-backdrop {
+  position: absolute;
+  width: 110%;
+  transform: translate(-5%, -5%);
+  background-size: cover;
+  z-index: 1;
+  filter: blur(5px);
+}
+.search-result-inf:hover > .search-result-backdrop {
+  width: 120%;
+  transform: translate(-10%, -10%);
+}
+.search-result-person-backdrop {
+  position: absolute;
+  width: 75%;
+  right: 0;
+  transform: translate(-5%, -30%);
+  background-size: cover;
+  z-index: 1;
+  filter: blur(5px);
+}
+.search-result-inf {
+  width: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.search-shadow {
+  width: 100%;
+  height: 10vw;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 80%
+  );
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 11;
+}
+.search-close-button {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%, 80%);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.search-close-icon {
+  font-size: 2rem;
+  color: #000;
+  transition: .2s linear;
+}
+.search-close-button:hover .search-close-icon {
+  transform: scale(.9);
+}
+/* MENU */
+
+.menu-icon {
+  cursor: pointer;
+  right: 3%;
+  color: #fff;
+  font-size: 2rem;
+  position: absolute;
+  pointer-events:all;
+}
+.nav-links {
+  text-decoration: none;
+  font-weight: 900;
+  cursor: pointer;
+  padding: 0.5rem 6rem;
+  width: auto;
+  position: relative;
+  pointer-events: fill;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: "Saira Semi Condensed", sans-serif;
+  transition: 0.5s ease-in-out;
+
+
+}
+.nav-pointer{
+  pointer-events: fill;
+}
+.nav-links a:hover {
+  text-shadow: 0px 0px 50px #ff0000;
+}
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0%;
+  right: -100%;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  z-index: -99;
+  overflow: hidden;
+}
+.nav-menu.active {
+  width: 100%;
+  opacity: 1;
+  transition: all 0.5 ease-in-out;
+  right: 0;
+  margin: 0;
+  height: 100vh;
+}
+.mobile-button-position{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+@media (max-width: 850px) {
+  .logo {
+    cursor: pointer;
+    margin: 1rem;
+    width: 75px;
+    pointer-events: fill;
+  }
+  .menu-icon {
+    cursor: pointer;
+    right: 3%;
+    color: #fff;
+    font-size: 25px;
+    pointer-events:all;
+  }
+
+  .search-button {
+    font-size: 25px;
+    padding: 0;
+  }
+  .search-box{
+    padding: 0;
+    margin-top:2.5rem;
+  }
+  .mobile-button-position{
+    height: auto;
+    position: absolute;
+    right: 10px;
+    top: 1rem;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+
+   }
+  .search-content-wrapper {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 10% 0;
+  }
+  .search-shadow {
+    width: 100%;
+    height: 20vw;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 80%
+    );
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 11;
+  }
+  .search-close-button {
+    transform: translate(-50%, 0%);
+    padding: 20px 23px;
+    font-size: 1.5rem;
+  }
+}

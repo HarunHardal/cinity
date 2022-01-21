@@ -1,0 +1,394 @@
+.recommendation-component {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+.recommendation-background {
+  position: absolute;
+  z-index: -99;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.recommendation-left-shadow {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0) 5%,
+    rgba(252, 176, 69, 0) 100%
+  );
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  z-index: 1;
+}
+.recommendation-top-shadow {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  z-index: 1;
+}
+.recommendation-bottom-shadow {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(255, 0, 0, 0) 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  z-index: 1;
+}
+.recommendation-wrapper {
+  position: relative;
+  padding: 10px;
+  width: 60%;
+  height: auto;
+  overflow: visible;
+  display: flex;
+  align-items: flex-start;
+  /* background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);  */
+  z-index: 2;
+}
+.recommendation-poster {
+  position: relative;
+  width: 350px;
+  height: 550px;
+  background-size: cover;
+}
+
+.recommendatino-prev,
+.recommendatino-next {
+  position: absolute;
+  z-index: 999;
+  bottom: 0;
+  font-size: 5em;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 50px;
+}
+.recommendatino-next {
+  right: 0%;
+}
+.recommendatino-prev {
+  left: 0;
+}
+
+.recommendation-line {
+  position: relative;
+  margin: 0 10px;
+  width: 5px;
+  height: 35vh;
+  transition: 0s;
+  background-color: #b20000;
+}
+.recommendation-info-wrapper {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  top: 0%;
+  right: 0;
+  padding: 10px 0;
+  overflow: hidden;
+}
+.recommendation-title {
+  color: #fff;
+  font-family: "Saira Semi Condensed", sans-serif;
+  margin: -10px 0;
+}
+.recommendation-genre-wrapper {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 20px 0 10px 0;
+  display: flex;
+  flex-direction: row;
+}
+.recommendation-genre-name {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  border: 2px solid #b20000;
+  border-radius: 20px;
+  padding: 0 8px;
+  float: left;
+  margin: 5px 10px;
+  font-size: 18px;
+}
+.runtime-wrapper {
+  /*content-wrapper*/
+  position: relative;
+  margin: 0;
+}
+.runtime {
+  color: #fff;
+  margin: 0px 10px;
+  font-size: 18px;
+}
+.overview-wrapper {
+  /*content-wrapper*/
+  width: 100%;
+  position: relative;
+}
+.overview {
+  color: #fff;
+  margin: 0px 10px;
+  font-size: 21px;
+  text-shadow: 0 0 5px #000;
+}
+.director-name-wrapper {
+  /*content-wrapper*/
+  width: 100%;
+  position: relative;
+}
+.director-name {
+  color: #fff;
+  text-transform: capitalize;
+  margin-left: 10px;
+}
+.colon {
+  font-family: "Saira Semi Condensed", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.next-button {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-100%);
+  width: auto;
+  background-color: #b20000;
+  border: none;
+  padding: 0 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+.next-button,
+span {
+  transition: 200ms;
+}
+.button-text {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Saira Semi Condensed", sans-serif;
+  font-size: 1.2rem;
+}
+.button-icon {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Saira Semi Condensed", sans-serif;
+  margin-left: 15px;
+  font-size: 3rem;
+}
+.next-button:hover .button-text {
+  color: transparent;
+  transform: translateX(-100%);
+}
+.next-button:hover .button-icon {
+  transform: translateX(-100%);
+}
+.line3 {
+  display: block;
+  position: absolute;
+  width: 90%;
+  right: -20%;
+  border-top: 1px solid #b20000;
+}
+.recommendation-text {
+  font-size: 21px;
+  text-shadow: 0 0 5px #000;
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .next-button {
+    right: 1%;
+  }
+  .recommendation-poster {
+    position: relative;
+    width: 250px;
+    height: auto;
+    background-size: cover;
+  }
+  .line3 {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* .recommendation-wrapper{
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+  } */
+  .recommendation-poster {
+    width: 250px;
+    height: 350px;
+  }
+  .next-button {
+    right: 7%;
+    top: 50%;
+    transform: translateY(-200%);
+  }
+  .line3 {
+    width: 75%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .recommendation-component {
+    padding: 0 20px;
+  }
+  .recommendation-wrapper {
+    width: 70%;
+    height: 60vh;
+  }
+  .recommendation-poster {
+    width: 250px;
+    height: 350px;
+  }
+  .next-button {
+    right: 7%;
+  }
+  .line3 {
+    width: 75%;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .recommendation-component {
+    display: flex;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .recommendation-wrapper {
+    width: 90%;
+    height: 60vh;
+    margin: 10px 0 150px 0;
+  }
+  .recommendation-poster {
+    width: 150px;
+    height: 250px;
+  }
+  .overview {
+    margin: 0px;
+  }
+  .recommendation-title {
+    font-size: 1.2rem;
+  }
+  .recommendation-genre-wrapper {
+    margin: 10px 0 0px 0;
+  }
+  .recommendation-genre-name {
+    margin: 3px 5px;
+  }
+  .recommendation-info-wrapper {
+    height: auto;
+  }
+  .director-name {
+    margin-left: 0;
+  }
+  .next-button {
+    position: absolute;
+    height: 50px;
+    top: 75%;
+    padding: 0 15px;
+    z-index: 99;
+  }
+  .button-text {
+    font-size: 0.9rem;
+  }
+  .button-icon {
+    margin-left: 10px;
+    font-size: 2rem;
+  }
+  .line3 {
+    width: 80%;
+  }
+  .recommendation-text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .recommendation-component {
+    display: flex;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .recommendation-wrapper {
+    width: 100%;
+    height: 60vh;
+    margin: 10px 0 150px 0;
+  }
+  .recommendation-poster {
+    width: 150px;
+    height: 250px;
+  }
+  .overview {
+    margin: 0px;
+  }
+  .recommendation-title {
+    font-size: 1rem;
+  }
+  .recommendation-genre-wrapper {
+    margin: 10px 0 0px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .recommendation-genre-name {
+    margin: 3px 5px;
+  }
+  .recommendation-info-wrapper {
+    height: auto;
+  }
+  .director-name {
+    margin-left: 0;
+  }
+  .colon {
+    font-size: 0.7rem;
+  }
+  .next-button {
+    position: absolute;
+    height: 40px;
+    top: 75%;
+    padding: 0 15px;
+    z-index: 99;
+  }
+  .button-text {
+    font-size: 0.9rem;
+  }
+  .button-icon {
+    margin-left: 10px;
+    font-size: 2rem;
+  }
+  .play-icon {
+    font-size: 0.9rem;
+    margin-right: 5px;
+  }
+  .line3 {
+    width: 70%;
+  }
+  .recommendation-text {
+    font-size: 18px;
+  }
+}
