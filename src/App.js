@@ -18,7 +18,7 @@ function App() {
 
   return (
         <div className="page-container">
-          {/* <Loader loadTime={loadTime}/>  */}
+        <Loader loadTime={loadTime}/>  
           <div className="page-wrapper">
             <Nav />
             <Switch>
