@@ -21,7 +21,7 @@ class Watchlist extends Component {
   delete = (i, p) => {
     this.arrayData.splice(i, 1);
     window.localStorage.setItem("data", JSON.stringify(this.arrayData));
-    window.location.reload();
+    window.location.reload()
   };
 
   render() {
